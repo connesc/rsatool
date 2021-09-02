@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import base64
-import fractions
+import math
 import argparse
 import random
 import sys
@@ -55,7 +55,7 @@ def factor_modulus(n, d, e):
 
             i += 1
 
-    p = fractions.gcd(c1-1, n)
+    p = math.gcd(c1-1, n)
     q = n // p
 
     return p, q
